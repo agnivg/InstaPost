@@ -149,7 +149,7 @@ const Profile=()=>{
                         user.followers.map(follower=>{
                             return(
                                 <Link to={'/profile/'+follower._id}>
-                                    <div style={{height:'40px'}}>
+                                    <div style={{height:'30px'}}>
                                         <img src={follower.profilepic} style={{height:'20px',width:'20px',borderRadius:'10px'}}/>
                                         <span> {follower.username}</span>
                                     </div>
@@ -164,7 +164,7 @@ const Profile=()=>{
                         user.following.map(follower=>{
                             return(
                                 <Link to={'/profile/'+follower._id}>
-                                    <div style={{height:'40px'}}>
+                                    <div style={{height:'30px'}}>
                                         <img src={follower.profilepic} style={{height:'20px',width:'20px',borderRadius:'10px',paddingTop:'1px'}}/>
                                         <span> {follower.username}</span>
                                     </div>
