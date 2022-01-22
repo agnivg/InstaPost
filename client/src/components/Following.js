@@ -92,7 +92,7 @@ const Following=()=>{
                                     )
                                 }) 
                             }</div>                           
-                            <div style={{display:'none'}} id={'add'+i}><input type='text' placeholder='Add a comment' onChange={(e)=>setComment(e.target.value)}/><button className="btn waves-effect waves-light #009688 teal" value={comment} onClick={()=>addComment(post._id)}>Add</button></div>                                     
+                            <div style={{display:'none'}} id={'add'+i}><input type='text' placeholder='Add a comment' value={comment} onChange={(e)=>setComment(e.target.value)}/><button className="btn waves-effect waves-light #009688 teal" value={comment} onClick={()=>addComment(post._id)}>Add</button></div>                                     
                         </div>
                     </div>
                 )
