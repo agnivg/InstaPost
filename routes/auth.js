@@ -7,10 +7,6 @@ const jwt=require('jsonwebtoken')
 const {JWT_SECRET}=require('../config/secrets')
 const verifyLogin=require('../middleware/verifylogin')
 
-router.get('/',(req,res)=>{
-    res.send('Hello')
-})
-
 router.post('/signup',(req,res)=>{
     const {name,email,username,password}=req.body;
     User.findOne({email:email}).then((savedUser)=>{
