@@ -16,6 +16,7 @@ mongoose.connect(MONGODB_URI,{
 
 require('./models/postSchema')
 require('./models/userSchema')
+require('./models/roomSchema')
 
 app.use(cors());
 app.use(express.json())

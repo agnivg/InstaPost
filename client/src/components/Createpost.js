@@ -37,10 +37,10 @@ const Createpost=()=>{
         }
     },[image])//to prevent axios to post before setImage is being called
     function getImageLink(e){
-        setFile(e.target.files)        
+        setFile(e.target.files)              
     }
     const submit=async(e)=>{
-        e.preventDefault()
+        e.preventDefault() 
         const files = Array.from(file)
         files.map(async file => {
             const reader = new FileReader();

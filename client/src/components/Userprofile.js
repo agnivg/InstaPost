@@ -100,6 +100,17 @@ const Userprofile=()=>{
             console.log("Internal Server error");
         })
     }
+    const chatRoom=()=>{
+        axios({
+            url:`/chat/${user._id}`,
+            method:'GET',
+            headers:{'auth':"Bearer "+localStorage.getItem('jwt')},
+        }).then((res)=>{
+            window.location.href=res.data.url
+        }).catch((e)=>{
+            console.log("Internal Server error");
+        })
+    }
     return(
         <>
         {user?<div style={{maxWidth:'90%',margin:'0px auto'}}>
@@ -110,7 +121,8 @@ const Userprofile=()=>{
                 borderBottom:"1px solid grey"
             }}>
                 <div>
-                    <img style={{width:'160px',height:'160px',borderRadius:'80px'}} src={user.profilepic}/>
+                    <img style={{width:'160px',height:'160px',borderRadius:'80px',display:'block'}} src={user.profilepic}/>
+                    {user.followers.includes(state._id) && user.following.includes(state._id) && <button className="btn waves-effect waves-light #4a148c purple darken-4" style={{margin:'5px 0px 5px 45px'}} onClick={()=>chatRoom()}>Chat</button>}
                 </div>
                 <div>
                     <h4>{user.name}</h4>
