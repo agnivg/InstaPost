@@ -5,47 +5,46 @@ https://instaapost.herokuapp.com/
 
 # UI of the Application
 ### SignUp
-<img src="Signup.png"></img>
+<img src="Screenshots/Signup.png"></img>
 
-### SignUp page after successful signup
-<img src="SuccessfulSignup.png"></img>
+### SignIn page after successful signup
+<img src="Screenshots/Successful Signup.png"></img>
 
 ### SignIn
-<img src="SuccessfulSignup.png"></img>
+<img src="Screenshots/SignIn.png"></img>
 
 ### Home(Desktop view)
-<img src="Home.png"></img>
+<img src="Screenshots/Home.png"></img>
 
 ### Home(Mobile view)
-<img src="Homemobile.jpg"></img>
+<img src="Screenshots/Homemobile.jpg"></img>
 
 ### Create Post
-<img src="Createpost.png"></img>
+<img src="Screenshots/Createpost.png"></img>
 
 ### User Profile of other user
-<img src="Userprofile1.png"></img>
+<img src="Screenshots/Userprofile1.png"></img>
 
 ### User Profile of other user before adding comment
-<img src="Userprofile2.png"></img>
+<img src="Screenshots/Userprofile2.png"></img>
 
 ### User Profile of other user after adding comment
-<img src="Userprofile3.png"></img>
+<img src="Screenshots/Userprofile3.png"></img>
  
 ### User Profile of current user
-<img src="Profile1.png"></img>
+<img src="Screenshots/Profile1.png"></img>
 
 ### Current user's posts comments
-<img src="Profile2.png"></img>
+<img src="Screenshots/Profile2.png"></img>
                        
 ### Current user's profile with his/her follower's and following's names and after updating his profile pic
-<img src="Profile.png"></img>
+<img src="Screenshots/Profile.png"></img>
                       
 ### Current user's following's posts
-<img src="followings.jpg"></img>
+<img src="Screenshots/followings.jpg"></img>
                          
-### Live Chat interface where user can send messages, their location and images with other users<br/>
-### and chatting happens realtime where users get notifications from Admin when other user is online and offline<br/>
+### Live Chat interface where user can send messages, their location and images with other users and chatting happens realtime where users get notifications from Admin when other user is online and offline
 ### (Desktop View)
-<img src="Chat2.png"></img>
+<img src="Screenshots/Chat2.png"></img>
 ### (Mobile View)  
-<img src="Chat1.jpg"></img>                    
+<img src="Screenshots/Chat1.jpg"></img>                    
