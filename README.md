@@ -47,4 +47,7 @@ https://instaapost.herokuapp.com/
 ### (Desktop View)
 <img src="Screenshots/Chat2.png"></img>
 ### (Mobile View)  
-<img src="Screenshots/Chat1.jpg"></img>                    
+<img src="Screenshots/Chat1.jpg"></img>
+
+### Notification of other user's status(online/offline)
+<img src="Screenshots/Chat3.png"></img>
