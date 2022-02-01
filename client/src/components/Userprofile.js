@@ -156,7 +156,7 @@ const Userprofile=()=>{
                                     <div style={{display:'none'}} id={'show'+i}>{
                                         post.comments.map((comment)=>{
                                             return(
-                                                <h6 key={comment.writtenBy._id}><span style={{color:'blue'}}><Link to={'/profile/'+comment.writtenBy._id}>{comment.writtenBy.username}</Link>:</span> {comment.text}</h6>
+                                                <h6 key={comment.writtenBy._id}><span style={{color:'blue'}}><a href={'/profile/'+comment.writtenBy._id}>{comment.writtenBy.username}</a>:</span> {comment.text}</h6>
                                             )
                                         }) 
                                     }</div>                           
