@@ -44,8 +44,8 @@ https://instaapost.herokuapp.com/
 <img src="followings.jpg"></img>
                          
 ### Live Chat interface where user can send messages, their location and images with other users<br/>
-and chatting happens realtime where users get notifications from Admin when other user is online and offline<br/>
-(Desktop View)<br/>
-<img src="Chat2.png"></img><br/>
-(Mobile View)<br/>   
+### and chatting happens realtime where users get notifications from Admin when other user is online and offline<br/>
+### (Desktop View)
+<img src="Chat2.png"></img>
+### (Mobile View)  
 <img src="Chat1.jpg"></img>                    
