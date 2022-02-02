@@ -101,15 +101,16 @@ const Userprofile=()=>{
         })
     }
     const chatRoom=()=>{
-        axios({
-            url:`/chat/${user._id}`,
-            method:'GET',
-            headers:{'auth':"Bearer "+localStorage.getItem('jwt')},
-        }).then((res)=>{
-            window.location.href=res.data.url
-        }).catch((e)=>{
-            console.log("Internal Server error");
-        })
+        const room1=state._id+user._id
+        const room2=user._id+state._id
+        const email=state.email
+        const e=email.substring(0,email.indexOf('@'))+'%40'+email.substring(email.indexOf('@')+1)
+        const d1=`https://instapost-chat-app.herokuapp.com/room?name=${state.username}&email=${e}&room=${room1}`
+        const d2=`https://instapost-chat-app.herokuapp.com/room?name=${state.username}&email=${e}&room=${room2}`
+        let d
+        if(room1>room2)d=d1
+        else d=d2
+        window.location.href=d
     }
     return(
         <>
@@ -156,7 +157,7 @@ const Userprofile=()=>{
                                     <div style={{display:'none'}} id={'show'+i}>{
                                         post.comments.map((comment)=>{
                                             return(
-                                                <h6 key={comment.writtenBy._id}><span style={{color:'blue'}}><a href={'/profile/'+comment.writtenBy._id}>{comment.writtenBy.username}</a>:</span> {comment.text}</h6>
+                                                <h6 key={comment.writtenBy._id}><span style={{color:'blue'}}><a href={comment.writtenBy._id==state._id?'/profile':'/profile/'+comment.writtenBy._id}>{comment.writtenBy.username}</a>:</span> {comment.text}</h6>
                                             )
                                         }) 
                                     }</div>                           
