@@ -50,4 +50,4 @@ https://instaapost.herokuapp.com/
 <img src="Screenshots/Chat1.jpg"></img>
 
 ### Notification of other user's status(online/offline)
-<img src="Screenshots/Chat3.png"></img>
+<img src="Screenshots/Chat.png"></img>
