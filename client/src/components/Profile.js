@@ -62,7 +62,7 @@ const Profile=()=>{
             reader.onload = async () => {
                 const form = new FormData();
                 form.append("image", file)
-                const response = await fetch("https://api.imgbb.com/1/upload?key=f1e92523c7def8bc8c1bb40828557766", {
+                const response = await fetch("https://api.imgbb.com/1/upload?key=b25be8be2dd8588068d161a073d36cdd", {
                     body: form,
                     method: "POST"
                 })
